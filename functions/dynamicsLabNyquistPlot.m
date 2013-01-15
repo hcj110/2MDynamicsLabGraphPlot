@@ -3,7 +3,7 @@ accelerations = [];
 t = 0:0.001:0.999;
 goodNames = [];
 
-d = '/Users/wangsiqi1992/Documents/MATLAB/Dynamics Lab/data/fine measurment';
+d = '/Users/wangsiqi1992/Documents/MATLAB/Dynamics Lab/2MDynamicsLabGraphPlot/data/fine measurment';
 list = dir(d);
 
 for i = 1:length(list)
@@ -64,10 +64,14 @@ yc = R*sin(angle)+y;
 
 str = sprintf('center (%0.5g , %0.5g );  R=%0.5g',x,y,R);
 
+hold on
 
-plot(real,img,'r+',xc,yc,'b'),
+ax = -10:10;
+ay = 0*ax;
+plot(real,img,'r+',xc,yc,'b',x,y,'o',ax,ay,'k-'),
 title(['Nyquist Plot for fine sweep, ',str])
       legend('measured','fitted')
-     xlabel x, ylabel y 
-     axis equal
-
+     xlabel 'real axis', ylabel 'imaginary axis' 
+     axis equal;
+axis([-4 3 -6 1]);
+hold off;
