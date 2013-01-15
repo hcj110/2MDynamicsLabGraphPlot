@@ -1,1 +1,7 @@
-ready to generate graph but make sure you replace the data and keep the naming convention~
+ready to generate graph 
+
+but: 
+	1.make sure you replace the data
+	2.keep the data naming convention~
+	
+sorry for not writing any comment...
