@@ -15,12 +15,6 @@ ready to generate graph
 PLEASE CHANGE SOMETHING ON THE GRAPH SO THAT IT IS NOT THE SAME AS OTHERS...!!
 
 
+contents... (this is only how I did it, you can play around with the functions)
 
-
-
-
-which script to use... (this is only how I did it, you can play around with the functions)
-
-template question 2:        DynamicLabDataExtract
-template question 3:        dynamicsLabFRFmagnitudeCoarse, dynamicsLabFRFmagnitudeFine, dynamicsLabFRFphaseCoarse, dynamicsLabFRFphaseFine.
-template question 4:        dynamicsLabNyquistPlot
+template question 2:        DynamicLab

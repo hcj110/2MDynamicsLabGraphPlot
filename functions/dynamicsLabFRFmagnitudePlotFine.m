@@ -3,7 +3,7 @@ accelerations = [];
 t = 0:0.001:0.999;
 goodNames = [];
 
-d = '/Users/wangsiqi1992/Documents/MATLAB/Dynamics Lab/data/fine measurment';
+d = 'data/fine measurment/';
 list = dir(d);
 
 for i = 1:length(list)
@@ -33,9 +33,7 @@ end
     
 f = [];
 for i = 1:size(goodNames,2)
-
-    cd(d);
-    fName = goodNames(i).name;
+    fName = [d, goodNames(i).name];
     load(fName);
     force = msrc1.Data(:,1);
     acceleration = msrc1.Data(:,2);
