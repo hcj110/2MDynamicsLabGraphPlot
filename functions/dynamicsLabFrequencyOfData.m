@@ -5,7 +5,7 @@ t = 0:0.001:0.999;
 rightI = 0;
 insectionPoints = [];
 for i = 1:1000
-    if length(insectionPoints)>=3
+    if length(insectionPoints)>=6
         break;
     end
     if abs(data(i))<0.1 && i-rightI>20
@@ -17,5 +17,5 @@ for i = 1:1000
 end
 
 
-f = 1/(0.001*(insectionPoints(3)-insectionPoints(1))/2);
+f = 1/(0.001*(insectionPoints(5)-insectionPoints(1))/2);
 
